@@ -136,7 +136,6 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 /* Footer */
 .footer {
   background-color: var(--second-backgroun-color);
@@ -170,8 +169,30 @@ ul {
   letter-spacing: 0.03em;
 }
 /*Стили для portfolio.html */
-.filter-list:hover,
-.filter-list:focus {
-  background-color: var(--accenr-color);
-  color: var(--second-text-color);
+.filter-list {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.main-content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.item-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.main-items .link {
+  color: var(--primary-text-color);
 }
