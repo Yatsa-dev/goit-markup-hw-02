@@ -1,0 +1,59 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121;
+/*футер вторичный белый rgba(255,255,255,0.6);*/
+/* акцент #2196F3 */
+/* фон белый #F5F4FA  */
+/* вторичный цвет фона #2F303A; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accenr-color: #2196f3;
+  --hero-footer-title: #ffffff;
+  --second-title-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* logo */
+.logo {
+  color: #000000;
+}
+.logo-part {
+  color: var(--accenr-color);
+}
+/*Site-nav*/
+.site-nav {
+  color: var(--title-text-color);
+}
+.site-nav.link:hover,
+.site-nav.link:focus {
+  color: var(--accenr-color);
+}
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--hero-footer-title);
+}
+.type-button {
+  background-color: var(--accenr-color);
+  color: var(--hero-footer-title);
+}
+/* Sections */
+.section-title {
+  color: var(--title-text-color);
+}
+/* Features */
+.features-list .title {
+  color: var(--title-text-color);
+}
