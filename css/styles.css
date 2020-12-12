@@ -1,21 +1,36 @@
-/* цвет основного текста #757575 */
-/* вторичный цвет текста #212121;
-/*футер вторичный белый rgba(255,255,255,0.6);*/
-/* акцент #2196F3 */
-/* фон белый #F5F4FA  */
-/* вторичный цвет фона #2F303A; */
 :root {
   --primary-text-color: #757575;
+  --second-text-color: #ffffff;
   --title-text-color: #212121;
   --accenr-color: #2196f3;
-  --hero-footer-title: #ffffff;
-  --second-title-color: rgba(255, 255, 255, 0.6);
+  --primary-bg-color: #f5f4fa;
+  --second-backgroun-color: #2f303a;
+}
+/* Стили для index.html */
+/* Header */
+.header-page {
+  background-color: var(--second-text-color);
+}
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 body {
   font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f4fa;
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 ul {
   list-style: none;
@@ -23,8 +38,19 @@ ul {
 .link {
   text-decoration: none;
 }
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accenr-color);
+}
 /* logo */
 .logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   color: #000000;
 }
 .logo-part {
@@ -33,27 +59,119 @@ ul {
 /*Site-nav*/
 .site-nav {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav.link:hover,
 .site-nav.link:focus {
   color: var(--accenr-color);
 }
+.site-nav.link.current {
+  color: var(--accenr-color);
+}
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--second-backgroun-color);
 }
 .hero-title {
-  color: var(--hero-footer-title);
+  color: var(--second-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.type-button {
+/* Button */
+.primary-button {
   background-color: var(--accenr-color);
-  color: var(--hero-footer-title);
+  color: var(--second-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 /* Sections */
+.hidden {
+  opacity: 0;
+}
 .section-title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /* Features */
 .features-list .title {
   color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-box .title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--second-backgroun-color);
+}
+.footer .item {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.logo-sub {
+  color: var(--second-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.address-text {
+  color: var(--second-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/*Стили для portfolio.html */
+.filter-list:hover,
+.filter-list:focus {
+  background-color: var(--accenr-color);
+  color: var(--second-text-color);
 }
