@@ -171,3 +171,16 @@ ul {
 .main-items .link {
   color: var(--primary-text-color);
 }
+/* Button */
+.filter-list > .button:hover,
+.filter-list > .button:focus {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+.filter-list > .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
